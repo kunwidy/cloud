@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header"> 
+        <div x-data="{ open: false }" class="max-w-6xl w-full mx-auto h-20 flex flex-row justify-between items-center">
+            <!-- logo -->
+            <div class="logo">
+                <a href="#"><img class="h-7 w-auto md:absolute md:ml-14" src="img/logo.png" alt="Your Brand"></a>
+                <button class="hidden md:flex rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                    <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- end logo -->
+
+            <!-- navbar -->
+            <div class="md:w-full md:bg-blue-50 md:absolute md:left-0 md:top-20 md:shadow-lg z-50">
+                <nav :class="{'flex': open, 'md:hidden': !open}" class="navbar mb:pb-4 pb-0 md:hidde md:p-4">
+                    <a class="navlink" href="#">Blog</a>
+                    <a class="navlink" href="#">Promotion</a>  
+                    <a class="navlink" href="#">Program</a>     
+                    <a class="navlink" href="#">Contact</a> 
+                </nav>
+            </div>
+            <!-- end navbar -->
+
+            <!-- login -->
+            <div class="relative flex">
+                <a href="#" class="mt-2 mr-3 link"> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" /></svg></a>
+                <a href="#" class="btn-basic text-sm px-4 py-2 rounded-sm mr-2">Register</a>
+                <a href="#" class="btn-primary text-sm px-4 py-2 rounded-sm">Login</a>
+            </div>
+            <!-- end login -->
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- page -->
+    <div class="mainpage">
+
+        <!-- title page -->
+        <div class="title mb-8">
+            <div class="max-w-6xl w-full  mx-auto py-6 md:px-6">
+                <h1 class="page-title text-white">Domains Configuration</h1>
+                <p class="text-blue-300 text-sm italic">3/4 step</p>
+            </div>
+        </div>
+        <!-- title page -->
+
+        <!-- main container -->
+        <div class="mainContainer">
+            <div class="max-w-6xl w-full  mx-auto py-6 md:px-6">
+
+                <p class="mb-6">Please review your domain name selections and any addons that are available for them.</p>
+                <!-- cart card -->
+                <div class="p-4 bg-gray-50 border rounded-md">
+                    <!-- header -->
+                    <div class="flex justify-between items-center mb-3">
+                        <div class="text-blue-900 text-xl font-semibold">
+                            paculhero.id
+                        </div>
+                        <div>
+                            <button type="reset" class="btn-danger group relative flex justify-center py-1 px-3 text-sm rounded">
+                                <span>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clipRule="evenodd" /></svg>
+                                </span>
+                                Remove
+                            </button>
+                        </div>
+                    </div>
+                    <!-- end header -->
+                    <p class="text-sm mb-8"><span class="text-red-400">No Hosting!</span> <a href="add-hosting.html" class="link font-medium">Click to Add</a> Registration Period: 1 Year/s</p>
+                    
+                    <!-- select features -->
+                    <div class="grid grid-cols-3 gap-6 items-stretch md:grid-cols-2 mb-6">
+                        <!-- addons -->
+                        <div class="p-4 border border-gray-300 hover:border-blue-600 rounded-md bg-white">
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5">
+                                  <input id="dnsman" name="dnsman" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                </div>
+                                <div class="ml-3 text-sm">
+                                  <label for="dnsman" class="font-medium text-gray-700">DNS Management</label>
+                                  <p class="text-gray-500">FREE! / 1 Year/s</p>
+                                </div>
+                              </div>
+                        </div>
+
+                        <!-- addons -->
+                        <div class="p-4 border border-gray-300 hover:border-blue-600 rounded-md bg-white">
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5">
+                                  <input id="Protection" name="Protection" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                </div>
+                                <div class="ml-3 text-sm">
+                                  <label for="Protection" class="font-medium text-gray-700">ID Protection</label>
+                                  <p class="text-gray-500">Rp.85,000- / 1 Year/s</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <!-- end select features -->
+
+                    <!-- form -->
+                    <div class="p-4 bg-gray-100">
+                        <section class="mb-4">
+                            <div class="flex gap-6 md:flex-col">
+                                <div class="form-controll mb-4 w-1/2 md:w-full">
+                                    <label for="money" class="label">Contact Type</label>
+                                    <select id="money" name="money" autocomplete="money" class="input mt-1.5 sm:text-sm">
+                                        <option>Individual</option>
+                                        <option>Organization</option>
+                                    </select>
+                                </div>
+                                <div class="form-controll mb-4 w-1/2 md:w-full md:mb-0">
+                                    <label for="wa" class="label">Identity Number</label>
+                                    <input id="wa" name="wa" type="number" class="input mt-1.5 sm:text-sm">
+                                    <small class="text-gray-400">Identity Number for <b>Individual</b> and Registration Number for <b>Organization</b></small>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+                            <div class="flex gap-6 md:flex-col">
+                                <div class="form-controll w-1/2 md:w-full md:mb-0">
+                                    <label for="wa" class="label">Date of birth</label>
+                                    <input id="wa" name="wa" type="number" class="input mt-1.5 sm:text-sm">
+                                    <small class="text-gray-400">YYYY-MM-DD <b>(Only for Individual)</b></small>
+                                </div>
+                                <div class="form-controll w-1/2 md:w-full">
+                                    <label for="money" class="label">Organization Type</label>
+                                    <select id="money" name="money" autocomplete="money" class="input mt-1.5 sm:text-sm">
+                                        <option>Company</option>
+                                        <option>Individual</option>
+                                    </select>
+                                    <small class="text-gray-400"><b>(Only for Organization)</b></small>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- end form -->
+                </div>
+                <!-- end cart card -->
+            </div>
+        </div>
+        <!-- end main container -->
+
+    </div>
+    <!-- end page -->
+
+    <!-- button sticky -->
+    <div class="fixed bottom-0 w-full bg-blue-100 shadow-2xl h-20 z-10 flex items-center justify-between">
+        <div class="max-w-6xl w-full  mx-auto flex justify-end pt-4">
+            <!-- btutton -->
+            <button onclick="window.location.href='cart-2.html';" type="submit" class="group relative flex justify-center py-2 px-4 btn-primary rounded mb-4 drop-shadow-lg">
+                <!-- Heroicon name: solid/badgeCheck -->
+                <span class="pt-1">
+                    <svg class="w-5 h-5 text-blue-300 group-hover:text-blue-200 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" /><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" /></svg>
+                </span>
+                Continue
+            </button>
+        </div>
+    </div>
+    
+
+    <!-- footer -->
+    <section class="footer mb-20">
+        <div class="max-w-6xl w-full  mx-auto">
+            <div class="flex items-center justify-between">
+                <div class="text-sm text-gray-400">
+                    Copyright © 2021 CloudHost. All Rights Reserved.
+                </div>
+    
+                <div>
+                    English
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end footer -->
+
+
+
+    <!-- Javascript -->
+    <script src="./js/scripts.js"></script>
+
+</body>
+</html>

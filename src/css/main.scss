@@ -1,0 +1,138 @@
+//All styles can be added here.
+body{
+    @apply text-gray-600;
+}
+
+
+.hero-heading{
+    @apply text-4xl mb-10 text-white font-medium;
+}
+
+.instructions{    
+    .sub-title{
+        @apply text-gray-900 pb-2 border-b-2 border-gray-400 mb-5 text-xl font-medium;
+
+        & + p {
+            @apply mb-3;
+        }
+    }
+    .code{
+        @apply block font-mono border rounded bg-gray-100 text-gray-700 px-4 py-5 leading-normal text-sm shadow;
+
+        &.pre{
+            @apply whitespace-pre;
+        }
+
+        em{
+            @apply opacity-75;
+        }
+    }
+
+}
+
+.social{
+    @apply block pt-6 text-gray-700;
+
+    a{
+        @apply text-blue-500 font-medium p-4;
+
+        &:hover{
+            @apply text-blue-700;
+        }
+    }
+}
+
+.form-controll{
+
+    .label{
+        @apply mb-1;
+    }
+    .input{
+        @apply appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10;
+    }
+}
+
+
+.checkBox{
+    @apply text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded;
+}
+
+.link {
+    @apply text-blue-600 hover:text-blue-500 transition-all ease-in-out duration-300;
+}
+
+.icon-link {
+    @apply text-gray-300 hover:text-blue-500 transition-all ease-in-out duration-300;
+}
+
+.btn-primary{
+    @apply border border-transparent font-medium text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all ease-in-out duration-300;
+}
+
+.btn-danger{
+    @apply text-center bg-red-200 text-red-500 rounded transition-all ease-in-out duration-300 hover:bg-red-100 focus:bg-red-100 ;
+}
+
+.btn-basic{
+    @apply border border-gray-300 font-medium text-gray-500 bg-gray-50 hover:bg-white hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all ease-in-out duration-300;
+}
+
+.tooltip {
+    @apply invisible absolute text-sm rounded-md shadow-md bg-blue-900 bg-opacity-70 text-blue-100 -mt-9;
+}
+
+.has-tooltip:hover{
+    
+    .tooltip{
+        @apply visible z-50 transition-all ease-in-out duration-200 p-1;
+    }
+}
+   
+.alert{
+    @apply p-4 border border-blue-300 bg-blue-100 rounded;
+}
+
+.max-h-0 {
+    max-height: 0;
+}
+
+.header{
+    @apply relative w-full px-6;
+}
+
+.navbar{
+    @apply flex-row justify-end md:flex-col md:flex-grow;
+    .navlink{
+        @apply font-semibold px-4 py-2 text-gray-800 hover:text-blue-600 focus:text-blue-700 transition-all ease-in-out duration-300;
+    }
+}
+
+.sidenav{
+    @apply font-semibold p-2 text-sm text-gray-800 hover:text-blue-600 focus:text-blue-700 hover:pl-3 transition-all ease-in-out duration-300 block border-b;
+}
+
+.sidenav-last{
+    @apply font-semibold p-2 text-sm text-gray-800 hover:text-blue-600 focus:text-blue-700 hover:pl-3 transition-all ease-in-out duration-300 block;
+}
+
+.loginbg{
+    background-color: rgba($color: #1D4ED8, $alpha: 0.7);
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mainpage{
+    min-height: calc(100vh - 155px);
+}
+
+.title{
+    @apply w-full bg-gradient-to-r from-blue-800 via-indigo-800 to-blue-700;
+}
+.page-title{
+    @apply text-4xl font-medium;
+}
+
+.footer{
+    @apply border-t p-6;
+}
