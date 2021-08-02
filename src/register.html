@@ -4,259 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Register</title>
+    <title>Login page</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 
 <body>
+    <!-- login section -->
+    <section class="relative min-h-screen flex items-center justify-center background-top py-12 px-4 sm:px-6 lg:px-8">
+       
 
-    <!-- header -->
-    <header class="header"> 
-        <div x-data="{ open: false }" class="max-w-6xl w-full mx-auto h-20 flex flex-row justify-between items-center">
-            <!-- logo -->
-            <div class="logo">
-                <a href="#"><img class="h-7 w-auto md:absolute md:ml-14" src="img/logo.png" alt="Your Brand"></a>
-                <button class="hidden md:flex rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
-                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-                    <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-                    <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </div>
-            <!-- end logo -->
+        <div class="max-w-lg w-full">
 
-            <!-- navbar -->
-            <div class="md:w-full md:bg-blue-50 md:absolute md:left-0 md:top-20 md:shadow-lg">
-                <nav :class="{'flex': open, 'md:hidden': !open}" class="navbar mb:pb-4 pb-0 md:hidde md:p-4">
-                    <a class="navlink" href="#">Blog</a>
-                    <a class="navlink" href="#">Promotion</a>  
-                    <a class="navlink" href="#">Program</a>     
-                    <a class="navlink" href="#">Contact</a> 
-                </nav>
-            </div>
-            <!-- end navbar -->
-
-            <!-- login -->
-            <div class="relative flex">
-                <a href="#" class="mt-2 mr-3 link"> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" /></svg></a>
-                <a href="#" class="btn-basic text-sm px-4 py-2 rounded-sm mr-2">Register</a>
-                <a href="#" class="btn-primary text-sm px-4 py-2 rounded-sm">Login</a>
-            </div>
-            <!-- end login -->
-        </div>
-    </header>
-    <!-- end header -->
-    
-    <!-- page -->
-    <div class="mainpage">
-        <div class="max-w-6xl w-full mx-auto">
-            <!-- main container -->
-            <div class="mainContainer max-w-4xl mx-auto pt-8">
+            <!-- register card -->
+            <div class="shadow-2xl bg-white p-8 rounded-lg">
                 <!-- header -->
-                <div class="bg-blue-700 border border-blue-800 py-4 rounded-t-md">
-                    <h2 class="text-2xl font-medium text-center text-white">Register</h2>
+                <div class="flex justify-between items-center mb-14">
+                    <div>
+                        <a href="login.html" class="group relative flex justify-center py-1 px-3 btn-primary rounded-md text-sm">
+                            <span class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" /></svg>
+                            </span>
+                            Halaman Login
+                        </a>
+                    </div>
+                    <div>
+                        <img src="img/logos.png" class="h-10 w-auto" alt="pandi">
+                    </div>
                 </div>
+                <!-- end header -->
 
-                <!-- form register -->
-                <form action="#" class="border py-6 px-10 md:mx-6">
-                    <!-- personal information -->
-                    <section class="mb-4">
-                        <h3 class="text-lg font-semibold mb-4 text-gray-700">Personal Information</h3>
-                        <div class="flex gap-6 md:flex-col">
-                            <div class="form-controll mb-6 w-1/2 md:w-full md:mb-0">
-                                <label for="first-name" class="label">First name</label>
-                                <input id="first-name" name="name" type="text" required class="input mt-1.5 sm:text-sm" placeholder="">
-                            </div>
+                <!--title-->
+                <div class="px-16 mb-10">
+                    <h1 class="text-center text-red-600 font-bold text-3xl">Pandi Registran Lock</h1>
+                    <p class="text-right font-bold text-xl text-gray-800 mr-3">Pendaftaran</p>
+                </div>
+                <!--end title-->
 
-                            <div class="form-controll mb-6 w-1/2 md:w-full">
-                                <label for="last-name" class="label">Last name</label>
-                                <input id="last-name" name="lastname" type="text" required class="input mt-1.5 sm:text-sm" placeholder="">
-                            </div>
+                <!--form-->
+                <form class="space-y-4 mx-8" action="#" method="POST">
+                    <div class="flex items-center form-controll">
+                        <div class="mb-1 w-1/3 text-red-500 font-medium">
+                          <label for="nama-depan">Nama Depan</label>
                         </div>
-                        <div class="flex gap-6 md:flex-col">
-                            <div class="form-controll mb-6 w-1/2 md:w-full md:mb-0">
-                                <label for="email-address" class="label">Email address</label>
-                                <input id="email-address" name="email" type="email" autocomplete="email" required class="input mt-1.5 sm:text-sm" placeholder="">
-                            </div>
-
-                            <div class="form-controll mb-6 w-1/2 md:w-full">
-                                <label for="phone" class="label">Phone number</label>
-                                <input id="phone" name="phone" type="number" required class="input mt-1.5 sm:text-sm" placeholder="">
-                            </div>
+                        <div class="w-2/3 flex-grow">
+                          <input class="w-full input" type="text" placeholder="" id="nama-depan"/>
                         </div>
-                    </section>
-
-                    <!-- biling -->
-                    <section class="mb-4">
-                        <h3 class="text-lg font-semibold mb-4 text-gray-700">Billing Adress</h3>
-                        <div class="flex gap-6 md:flex-col">
-                            <div class="form-controll mb-6 w-1/2 md:w-full md:mb-0">
-                                <label for="company" class="label">Company Name</label>
-                                <input id="company" name="company" type="text" class="input mt-1.5 sm:text-sm">
-                            </div>
-
-                            <div class="form-controll mb-6 w-1/2 md:w-full">
-                                <label for="address1" class="label">Street Adress 1</label>
-                                <input id="address1" name="address1" type="text" class="input mt-1.5 sm:text-sm">
-                            </div>
+                    </div>
+                    <div class="flex items-center form-controll">
+                        <div class="mb-1 w-1/3 text-red-500 font-medium">
+                          <label for="nama-belakang">Nama Belakang</label>
                         </div>
-                        <div class="flex gap-6 md:flex-col">
-                            <div class="form-controll mb-6 w-1/2 md:w-full md:mb-0">
-                                <label for="address2" class="label">Street Adress 2</label>
-                                <input id="address2" name="address2" type="text" class="input mt-1.5 sm:text-sm">
-                            </div>
-
-                            <div class="form-controll mb-6 w-1/2 md:w-full">
-                                <label for="city" class="label">City</label>
-                                <input id="city" name="city" type="text" class="input mt-1.5 sm:text-sm">
-                            </div>
+                        <div class="w-2/3 flex-grow">
+                          <input class="w-full input" type="text" placeholder="" id="nama-belakang"/>
                         </div>
-                        <div class="flex gap-6 md:flex-col">
-                            <div class="flex gap-6 md:flex-col">
-                                <div class="form-controll mb-6 w-1/2 md:w-full md:mb-0">
-                                    <label for="state" class="label">State</label>
-                                    <input id="state" name="state" type="text" class="input mt-1.5 sm:text-sm">
-                                </div>
-                                <div class="form-controll mb-6 w-1/2 md:w-full md:mb-0">
-                                    <label for="postcode" class="label">Post Code</label>
-                                    <input id="postcode" name="postcode" type="number" class="input mt-1.5 sm:text-sm">
-                                </div>
-                            </div>
-                            <div class="form-controll mb-6 w-1/2 md:w-full">
-                                <label for="country" class="label">Country</label>
-                                <select id="country" name="country" autocomplete="country" class="input mt-1.5 sm:text-sm">
-                                    <option>United States</option>
-                                    <option>Canada</option>
-                                    <option>Mexico</option>
-                                </select>
-                            </div>
+                    </div>
+                    <div class="flex items-baseline form-controll">
+                        <div class="mb-1 w-1/3 text-red-500 font-medium">
+                          <label for="email">Email</label>
                         </div>
-                    </section>
-                    <!-- end biling -->
-
-                    <!-- additional information -->
-                    <section class="mb-4">
-                        <h3 class="text-lg font-semibold mb-4 text-gray-700">Additional Required Information</h3>
-                        <div class="flex gap-6 md:flex-col">
-                            <div class="form-controll mb-6 w-1/2 md:w-full md:mb-0">
-                                <label for="wa" class="label">Whatsapp Number</label>
-                                <input id="wa" name="wa" type="number" class="input mt-1.5 sm:text-sm">
-                                <small class="text-gray-400">Ex : 628111123333</small>
-                            </div>
-
-                            <div class="form-controll mb-6 w-1/2 md:w-full">
-                                <label for="money" class="label">Choose Currency</label>
-                                <select id="money" name="money" autocomplete="money" class="input mt-1.5 sm:text-sm">
-                                    <option>IDR</option>
-                                    <option>USD</option>
-                                </select>
-                            </div>
+                        <div class="w-2/3 flex-grow">
+                          <input class="w-full input" type="email" placeholder="" id="email"/>
+                          <p class="italic leading-none text-xs text-gray-400 mt-1">Pastikan email yang digunakan sama dengan email pembelian pada penyedia jasa penjualan domain .id Anda</p>
                         </div>
-                        <div class="flex-col">
-                            <div class="form-controll mb-10 w-1/2 md:w-full">
-                                <label for="way" class="label">How did you find us?</label>
-                                <select id="way" name="way" autocomplete="way" class="input mt-1.5 sm:text-sm">
-                                    <option>None</option>
-                                    <option>Google</option>
-                                    <option>Social media</option>
-                                </select>
-                            </div>
+                    </div>
+                    <div class="flex items-center form-controll">
+                        <div class="mb-1 w-1/3 text-red-500 font-medium">
+                          <label for="password">Password</label>
                         </div>
-                    </section>
-                    <!-- end additional information -->
-
-                    <!-- account -->
-                    <section class="mb-4">
-                        <h3 class="text-lg font-semibold mb-4 text-gray-700">Account Security</h3>
-                        <div class="flex gap-6 md:flex-col">
-                            <div class="form-controll mb-6 w-1/2 md:w-full md:mb-0">
-                                <label for="pass" class="label">Password</label>
-                                <input id="pass" name="pass" type="password" class="input mt-1.5 sm:text-sm">
-                            </div>
-
-                            <div class="form-controll mb-6 w-1/2 md:w-full">
-                                <label for="pass2" class="label">Confirm Password</label>
-                                <input id="pass2" name="pass2" type="password" class="input mt-1.5 sm:text-sm">
-                            </div>
+                        <div class="w-2/3 flex-grow">
+                          <input class="w-full input" type="password" placeholder="" id="password"/>
                         </div>
-                    </section>
-                    <!-- end account -->
-
-                    <!-- mail -->
-                    <section class="mb-4">
-                        <h3 class="text-lg font-semibold mb-4 text-gray-700">Join our mailing list</h3>
-                        <p class="text-sm mb-4">We would like to send you occasional news, information and special offers by email. To join our mailing list, simply tick the box below. You can unsubscribe at any time.</p>
-                        <!-- email toggle -->
-                        <div class="flex justify-start items-center mb-8" x-data="{ toggle: '0' }">
-                            <div class="mr-4 text-green-500">
-                                Receipt email
-                            </div>
-                            <div class="relative rounded-full w-12 h-6 transition duration-200 ease-linear"
-                                 :class="[toggle === '1' ? 'bg-green-400' : 'bg-gray-400']">
-                              <label for="toggle" 
-                                     class="absolute left-0 bg-white border-2 mb-2 w-6 h-6 rounded-full transition transform duration-100 ease-linear cursor-pointer"
-                                     :class="[toggle === '1' ? 'translate-x-full border-green-400' : 'translate-x-0 border-gray-400']"></label>
-                              <input type="checkbox" id="toggle" name="toggle" 
-                                     class="appearance-none w-full h-full active:outline-none focus:outline-none"
-                                     @click="toggle === '0' ? toggle = '1' : toggle = '0'">
-                            </div>
+                    </div>
+                    <div class="flex items-center form-controll">
+                        <div class="mb-1 w-1/3 text-red-500 font-medium">
+                          <label for="repassword">Ulangi Password</label>
                         </div>
-                        <!-- email toggle -->
-                        
-                        <div class="flex items-center">
-                            <input id="agree" name="agree" type="checkbox" class="h-4 w-4 .checkBox">
-                            <label for="agree" class="ml-2 block text-sm text-gray-900">
-                                I have read and agree to the <a href="#" class="link">Terms of Service</a>
-                            </label>
+                        <div class="w-2/3 flex-grow">
+                          <input class="w-full input" type="password" placeholder="" id="repassword"/>
                         </div>
-                    </section>
-                    <!-- end mail -->
-
-                    <!-- btutton -->
-                    <button type="submit" class="group relative w-full flex justify-center py-2 px-4 text-lg btn-primary rounded-md mb-4">
-                        <span class="absolute left-0 inset-y-0 flex items-center pl-3">
-                        <!-- Heroicon name: solid/fingerprint -->
-                        <svg class="h-5 w-5 text-blue-500 group-hover:text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fillRule="evenodd" d="M6.625 2.655A9 9 0 0119 11a1 1 0 11-2 0 7 7 0 00-9.625-6.492 1 1 0 11-.75-1.853zM4.662 4.959A1 1 0 014.75 6.37 6.97 6.97 0 003 11a1 1 0 11-2 0 8.97 8.97 0 012.25-5.953 1 1 0 011.412-.088z" clipRule="evenodd" /><path fillRule="evenodd" d="M5 11a5 5 0 1110 0 1 1 0 11-2 0 3 3 0 10-6 0c0 1.677-.345 3.276-.968 4.729a1 1 0 11-1.838-.789A9.964 9.964 0 005 11zm8.921 2.012a1 1 0 01.831 1.145 19.86 19.86 0 01-.545 2.436 1 1 0 11-1.92-.558c.207-.713.371-1.445.49-2.192a1 1 0 011.144-.83z" clipRule="evenodd" /><path fillRule="evenodd" d="M10 10a1 1 0 011 1c0 2.236-.46 4.368-1.29 6.304a1 1 0 01-1.838-.789A13.952 13.952 0 009 11a1 1 0 011-1z" clipRule="evenodd" />
-                        </svg>
-                        </span>
-                        Register
-                    </button>
-
+                    </div>
+                    <div class="text-sm pt-6 pb-4">
+                        Dengan mendaftar, Saya menyetujui Seluruh <a href="#" class="link">Syarat & Ketentuan</a> yang berlaku pada website Pandi.
+                    </div>
+                    <div class="grid items-center">
+                        <button type="submit" class="group relative flex justify-center py-2 px-4 btn-primary rounded-md">
+                            <span class="flex items-center">
+                              <svg class="w-6 h-6 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </span>
+                            Daftar
+                        </button>
+                    </div>
+        
                 </form>
-                <!-- end form register -->
+                <!--end form-->
 
-                <!-- form bottom -->
-                <div class="border bg-gray-100 text-center p-6 mb-10 md:mx-6">
-                    Already registered with us? <a href="login.html" class="link">Sign In</a> or <a href="#" class="link">Reset Password</a>
-                </div>
-                <!-- end form bottom -->
             </div>
-            <!-- end main container -->
-        </div>
-    </div>
-    <!-- end page -->
-    
+            <!-- end register card -->
 
-    <!-- footer -->
-    <section class="footer">
-        <div class="max-w-6xl w-full  mx-auto">
-            <div class="flex items-center justify-between">
-                <div class="text-sm text-gray-400">
-                    Copyright © 2021 CloudHost. All Rights Reserved.
-                </div>
-    
-                <div>
-                    English
-                </div>
+            <div class="text-xs text-center mt-10">
+                © 2021 PANDI - PENGELOLA NAMA DOMAIN INTERNET INDONESIA. All rights reserved
             </div>
+
+          
+
+         
         </div>
+
     </section>
-    <!-- end footer -->
+    <!-- end section -->
 
     <!-- Javascript -->
     <script src="./js/scripts.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 </body>
 </html>
+

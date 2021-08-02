@@ -48,7 +48,7 @@ body{
         @apply mb-1;
     }
     .input{
-        @apply appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10;
+        @apply appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-red-500 focus:border-red-500 focus:z-10;
     }
 }
 
@@ -120,6 +120,28 @@ body{
     background-image: url('../img/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.background-top{
+    background-image: url('../img/bg-top.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+
+.background-side{
+    background-image: url('../img/bg-side.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+}
+
+@media only screen and (max-width: 768px) {
+    .background-side{
+        background-image: url('../img/bg-top.png');
+        background-position: top;
+       
+    }
 }
 
 .mainpage{
