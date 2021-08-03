@@ -3,10 +3,10 @@ body{
     @apply text-gray-600;
 }
 
-
 .hero-heading{
     @apply text-4xl mb-10 text-white font-medium;
 }
+
 
 .instructions{    
     .sub-title{
@@ -77,6 +77,8 @@ body{
     @apply border border-gray-300 font-medium text-gray-500 bg-gray-50 hover:bg-white hover:text-red-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-all ease-in-out duration-300;
 }
 
+
+
 .tooltip {
     @apply invisible absolute text-sm rounded-md shadow-md bg-red-900 bg-opacity-70 text-blue-100 -mt-9;
 }
@@ -101,9 +103,12 @@ body{
 }
 
 .navbar{
-    @apply flex-row justify-end md:flex-col md:flex-grow;
+    @apply flex-row justify-start md:flex-col md:flex-grow;
     .navlink{
-        @apply font-semibold px-4 py-2 text-gray-800 hover:text-red-600 focus:text-blue-700 transition-all ease-in-out duration-300;
+        @apply font-semibold px-4 py-2 text-gray-800 hover:text-red-600 focus:text-red-700 transition-all ease-in-out duration-300;
+    }
+    .navlink-active{
+        @apply font-semibold px-4 py-2 text-red-500 hover:text-red-600 focus:text-red-700 transition-all ease-in-out duration-300;
     }
 }
 
@@ -145,16 +150,16 @@ body{
 }
 
 .mainpage{
-    min-height: calc(100vh - 155px);
+    min-height: calc(100vh - 185px);
 }
 
 .title{
-    @apply w-full bg-gradient-to-r from-red-800 via-indigo-800 to-red-700;
+    @apply w-full bg-gradient-to-r from-red-600 to-red-500;
 }
 .page-title{
-    @apply text-4xl font-medium;
+    @apply text-3xl font-medium;
 }
 
 .footer{
-    @apply border-t border-gray-200 p-6;
+    @apply bg-white p-6;
 }
