@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register page</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+
+<body>
+    <!-- login section -->
+    <section class="relative min-h-screen flex items-center justify-center background-top py-12 px-4 sm:px-6 lg:px-8">
+       
+
+        <div class="max-w-lg w-full">
+
+            <!-- register card -->
+            <div class="shadow-2xl bg-white p-8 rounded-lg">
+                <!-- header -->
+                <div class="flex justify-between items-center mb-14">
+                    <div>
+                        <a href="login.html" class="group relative flex justify-center py-1 px-3 btn-primary rounded-md text-sm">
+                            <span class="flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" /></svg>
+                            </span>
+                            Halaman Login
+                        </a>
+                    </div>
+                    <div>
+                        <img src="img/logos.png" class="h-10 w-auto" alt="pandi">
+                    </div>
+                </div>
+                <!-- end header -->
+
+                <!--title-->
+                <div class="px-16 mb-10">
+                    <h1 class="text-center text-red-600 font-bold text-3xl">Pandi Registran Lock</h1>
+                    <p class="text-right font-bold text-xl text-gray-800 mr-3">Pendaftaran</p>
+                </div>
+                <!--end title-->
+
+                <!--status-->
+                <div class="text-center pb-10">
+                    <div class="h-32 w-32 rounded-full border-8 border-green-200 mx-auto flex items-center mb-10 animate-pulse">
+                        <svg class="w-24 h-24 text-green-500 mx-auto" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                    </div>
+                    <h4 class="text-green-500 font-bold text-xl">Verifikasi Email Berhasil,</h4>
+                    <p class="text-sm mb-8">Silahkan Klik tombol di bawah ini untuk Login</p>
+
+                    <button type="button" class="group relative flex justify-center py-2 px-4 btn-primary rounded-md mx-auto" onclick="window.location.href='./login.html';">
+                        <span class="flex items-center">
+                          <!-- Heroicon name: solid/lock-closed -->
+                          <svg class="h-5 w-5 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                        Login
+                    </button>
+                </div>
+                <!--end status-->
+
+            </div>
+            <!-- end register card -->
+
+            <div class="text-xs text-center mt-10">
+                © 2021 PANDI - PENGELOLA NAMA DOMAIN INTERNET INDONESIA. All rights reserved
+            </div>
+
+          
+
+         
+        </div>
+
+    </section>
+    <!-- end section -->
+
+    <!-- Javascript -->
+    <script src="./js/scripts.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+</body>
+</html>
+
