@@ -80,7 +80,7 @@ body{
 
 
 .tooltip {
-    @apply invisible absolute text-sm rounded-md shadow-md bg-red-900 bg-opacity-70 text-blue-100 -mt-9;
+    @apply invisible absolute text-sm rounded-md shadow-md bg-gray-900 bg-opacity-80 text-gray-100 -mt-9;
 }
 
 .has-tooltip:hover{
