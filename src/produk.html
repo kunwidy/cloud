@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Produk</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!--pluggin-->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css">
 </head>
 
 <body>
@@ -40,7 +43,8 @@
 
             <!-- user -->
             <div class="relative flex">
-                <a href="#" class="mt-2 mr-3"> 
+                <a href="./notifikasi.html" class="mt-2 mr-3"> 
+                    <span class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-red-600 opacity-75"></span>
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" /></svg>
                 </a>
 
@@ -134,7 +138,7 @@
                 <div class="grid grid-cols-3 gap-10 md:grid-cols-1">
                     <!--product card-->
                     <div class="border-4 border-red-500 rounded-lg text-center hover:shadow-xl transition-all ease-in-out duration-500">
-                        <div class="p-4 bg-gradient-to-r from-gray-50 to-gray-200 rounded-t-lg">
+                        <div class="p-4 bg-gradient-to-r from-gray-50 to-gray-200 rounded-t">
                             <h3 class="font-bold text-3xl text-red-600">.web.id</h3>
                         </div>
                         <div class="px-4 pb-6 pt-4">
@@ -151,7 +155,7 @@
 
                     <!--product card-->
                     <div class="border-4 border-red-500 rounded-lg text-center hover:shadow-xl transition-all ease-in-out duration-500">
-                        <div class="p-4 bg-gradient-to-r from-gray-50 to-gray-200 rounded-t-lg">
+                        <div class="p-4 bg-gradient-to-r from-gray-50 to-gray-200 rounded-t">
                             <h3 class="font-bold text-3xl text-red-600">.id</h3>
                         </div>
                         <div class="px-4 pb-6 pt-4">
@@ -168,7 +172,7 @@
 
                     <!--product card-->
                     <div class="border-4 border-red-500 rounded-lg text-center hover:shadow-xl transition-all ease-in-out duration-500">
-                        <div class="p-4 bg-gradient-to-r from-gray-50 to-gray-200 rounded-t-lg">
+                        <div class="p-4 bg-gradient-to-r from-gray-50 to-gray-200 rounded-t">
                             <h3 class="font-bold text-3xl text-red-600">.co.id</h3>
                         </div>
                         <div class="px-4 pb-6 pt-4">
@@ -183,6 +187,110 @@
                     </div>
                     <!--end product card-->
 
+                    <!--product card v2-->
+                    <div class="border-4 border-red-500 rounded-lg text-center hover:shadow-xl transition-all ease-in-out duration-500">
+                        <div class="p-4 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-t">
+                            <h3 class="font-bold text-3xl text-white">.co.id</h3>
+                        </div>
+                        <div class="px-4 pb-6 pt-4">
+                            <p class="text-2xl text-gray-800 mb-6 font-semibold">Rp. 210.000 <span class="text-base text-gray-500">/ tahun</span></p>
+                            <button type="button" class="group relative flex justify-center py-2 px-4 btn-primary rounded-md mx-auto"  @click="showModal = true">
+                                <span class="flex items-center">
+                                    <svg class="h-6 w-6 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" /></svg>
+                                </span>
+                                Order sekarang
+                            </button>
+                        </div>
+                    </div>
+                    <!--end product card v2-->
+
+                    <!--product card v3-->
+                    <div class="border-4 border-red-500 rounded-lg text-center hover:shadow-xl transition-all ease-in-out duration-500">
+                        <div class="p-4 bg-gradient-to-r from-green-300 via-yellow-500 to-red-600 rounded-t">
+                            <h3 class="font-bold text-3xl text-white">.co.id</h3>
+                        </div>
+                        <div class="px-4 pb-6 pt-4">
+                            <p class="text-2xl text-gray-800 mb-6 font-semibold">Rp. 210.000 <span class="text-base text-gray-500">/ tahun</span></p>
+                            <button type="button" class="group relative flex justify-center py-2 px-4 btn-primary rounded-md mx-auto"  @click="showModal = true">
+                                <span class="flex items-center">
+                                    <svg class="h-6 w-6 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" /></svg>
+                                </span>
+                                Order sekarang
+                            </button>
+                        </div>
+                    </div>
+                    <!--end product card v3-->
+
+                    <!--product card v3-->
+                    <div class="border-4 border-red-500 rounded-lg text-center hover:shadow-xl transition-all ease-in-out duration-500">
+                        <div class="p-4 bg-gradient-to-r from-blue-300 via-purple-500 to-red-600 rounded-t">
+                            <h3 class="font-bold text-3xl text-white">.co.id</h3>
+                        </div>
+                        <div class="px-4 pb-6 pt-4">
+                            <p class="text-2xl text-gray-800 mb-6 font-semibold">Rp. 210.000 <span class="text-base text-gray-500">/ tahun</span></p>
+                            <button type="button" class="group relative flex justify-center py-2 px-4 btn-primary rounded-md mx-auto"  @click="showModal = true">
+                                <span class="flex items-center">
+                                    <svg class="h-6 w-6 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" /></svg>
+                                </span>
+                                Order sekarang
+                            </button>
+                        </div>
+                    </div>
+                    <!--end product card v3-->
+
+                    <!--product card v3-->
+                    <div class="border-4 border-gray-500 rounded-lg text-center hover:shadow-xl transition-all ease-in-out duration-500">
+                        <div class="p-4 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 rounded-t">
+                            <h3 class="font-bold text-3xl text-gray-700">.co.id</h3>
+                        </div>
+                        <div class="px-4 pb-6 pt-4">
+                            <p class="text-2xl text-gray-800 mb-6 font-semibold">Rp. 210.000 <span class="text-base text-gray-500">/ tahun</span></p>
+                            <button type="button" class="group relative flex justify-center py-2 px-4 btn-basic rounded-md mx-auto"  @click="showModal = true">
+                                <span class="flex items-center">
+                                    <svg class="h-6 w-6 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" /></svg>
+                                </span>
+                                Order sekarang
+                            </button>
+                        </div>
+                    </div>
+                    <!--end product card v3-->
+
+                    <!--product card v3-->
+                    <div class="border-4 border-gray-500 rounded-lg text-center hover:shadow-xl transition-all ease-in-out duration-500">
+                        <div class="p-4 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 rounded-t">
+                            <h3 class="font-bold text-3xl text-gray-700">.co.id</h3>
+                        </div>
+                        <div class="px-4 pb-6 pt-4">
+                            <p class="text-2xl text-gray-800 mb-6 font-semibold">Rp. 210.000 <span class="text-base text-gray-500">/ tahun</span></p>
+                            <button type="button" class="group relative flex justify-center py-2 px-4 btn-basic rounded-md mx-auto"  @click="showModal = true">
+                                <span class="flex items-center">
+                                    <svg class="h-6 w-6 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" /></svg>
+                                </span>
+                                Order sekarang
+                            </button>
+                        </div>
+                    </div>
+                    <!--end product card v3-->
+
+                    <!--product card v3-->
+                    <div class="border-4 border-gray-500 rounded-lg text-center hover:shadow-xl transition-all ease-in-out duration-500">
+                        <div class="p-4 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400 rounded-t">
+                            <h3 class="font-bold text-3xl text-gray-700">.co.id</h3>
+                        </div>
+                        <div class="px-4 pb-6 pt-4">
+                            <p class="text-2xl text-gray-800 mb-6 font-semibold">Rp. 210.000 <span class="text-base text-gray-500">/ tahun</span></p>
+                            <button type="button" class="group relative flex justify-center py-2 px-4 btn-basic rounded-md mx-auto"  @click="showModal = true">
+                                <span class="flex items-center">
+                                    <svg class="h-6 w-6 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" /></svg>
+                                </span>
+                                Order sekarang
+                            </button>
+                        </div>
+                    </div>
+                    <!--end product card v3-->
+
+                    
+
                 </div>
                 <!--end Produk regyitrylock-->
 
@@ -196,15 +304,15 @@
     <!-- footer -->
     <footer class="footer">
         <div class="max-w-6xl w-full  mx-auto">
-            <div class="relative flex items-center justify-between">
-                <div class="text-xs text-gray-400">
+            <div class="relative flex items-center justify-between md:flex-col-reverse md:space-y-4">
+                <div class="text-xs text-gray-400 md:text-center md:mt-4">
                     © 2021 2021 PANDI - PENGELOLA NAMA DOMAIN INTERNET INDONESIA. <br/>All Rights Reserved.
                 </div>
                 <div class="text-sm">
                     <a href="#" class="link">Pandi <span class="mx-2 text-gray-400">|</span></a>
-                    <a href="#" class="link">FAQ <span class="mx-2 text-gray-400">|</span></a>
+                    <a href="faq.html" class="link">FAQ <span class="mx-2 text-gray-400">|</span></a>
                     <a href="#" class="link">Regulasi <span class="mx-2 text-gray-400">|</span></a>
-                    <a href="#" class="link">Syarat & Ketentuan</a>
+                    <a href="syarat.html" class="link">Syarat & Ketentuan</a>
                 </div>
                 <div class="h-14">
                    <a href="#" class="link">

@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kontak</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!--pluggin-->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css">
 </head>
 
 <body>
@@ -40,7 +43,8 @@
 
             <!-- user -->
             <div class="relative flex">
-                <a href="#" class="mt-2 mr-3"> 
+                <a href="./notifikasi.html" class="mt-2 mr-3"> 
+                    <span class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-red-600 opacity-75"></span>
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" /></svg>
                 </a>
 
@@ -87,7 +91,7 @@
 
                 <div class="flex gap-6 md:flex-col">
                     <!--map-->
-                    <div class="w-2/3 p-4 border-4 border-red-400 rounded md:w-full">
+                    <div class="w-2/3 p-4 border-4 border-red-400 rounded-xl md:w-full">
                         <div class="map-responsive">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63449.445222530914!2d106.61456617910159!3d-6.317420899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e4b9c856e5f7%3A0xd98c8b9d3cd44465!2sPandi%20-%20.Id%20Registry!5e0!3m2!1sid!2sid!4v1628158317250!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
@@ -115,8 +119,12 @@
                         </div>
 
                         <!--socmed-->
-                        <div class="bg-red-600 h-12 items-center text-white rounded-full mb-6">
-                            test
+                        <div class="relative bg-gray-400 h-12 flex justify-center rounded-full mb-6 py-3 space-x-4">
+                            <a href="#"><img class="h-6" src="img/ig.png" alt="ig"></a>
+                            <a href="#"><img class="h-6" src="img/fb.png" alt="fb"></a>
+                            <a href="#"><img class="h-6" src="img/twit.png" alt="twit"></a>
+                            <a href="#"><img class="h-6" src="img/youtube.png" alt="youtube"></a>
+                            <a href="#"><img class="h-6" src="img/in.png" alt="in"></a>
                         </div>
                         <!--end socmed-->
 
@@ -161,15 +169,15 @@
     <!-- footer -->
     <footer class="footer">
         <div class="max-w-6xl w-full  mx-auto">
-            <div class="relative flex items-center justify-between">
-                <div class="text-xs text-gray-400">
+            <div class="relative flex items-center justify-between md:flex-col-reverse md:space-y-4">
+                <div class="text-xs text-gray-400 md:text-center md:mt-4">
                     © 2021 2021 PANDI - PENGELOLA NAMA DOMAIN INTERNET INDONESIA. <br/>All Rights Reserved.
                 </div>
                 <div class="text-sm">
                     <a href="#" class="link">Pandi <span class="mx-2 text-gray-400">|</span></a>
-                    <a href="#" class="link">FAQ <span class="mx-2 text-gray-400">|</span></a>
+                    <a href="faq.html" class="link">FAQ <span class="mx-2 text-gray-400">|</span></a>
                     <a href="#" class="link">Regulasi <span class="mx-2 text-gray-400">|</span></a>
-                    <a href="#" class="link">Syarat & Ketentuan</a>
+                    <a href="syarat.html" class="link">Syarat & Ketentuan</a>
                 </div>
                 <div class="h-14">
                    <a href="#" class="link">
